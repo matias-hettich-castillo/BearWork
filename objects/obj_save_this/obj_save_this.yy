@@ -1,17 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_player_icon",
-    "path": "sprites/spr_player_icon/spr_player_icon.yy",
+    "name": "spr_save_icon",
+    "path": "sprites/spr_save_icon/spr_save_icon.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": {
-    "name": "obj_save_this",
-    "path": "objects/obj_save_this/obj_save_this.yy",
-  },
+  "persistent": false,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,9 +21,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +29,7 @@
     "path": "folders/Objects/Controllers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_save_this",
   "tags": [],
   "resourceType": "GMObject",
 }

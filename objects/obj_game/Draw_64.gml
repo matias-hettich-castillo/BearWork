@@ -8,3 +8,4 @@ draw_set_font(DEFAULT_FONT)
 draw_set_color(text_color)
 
 draw_text(8, 8, text)
+draw_text(8, 16, "score: " + string(obj_player.player_score))

@@ -25,3 +25,18 @@ text = "Switch"
 
 // Set switch text color
 text_color = c_white
+
+// Set button enable/disable function
+enable = true
+
+function set_enable(_value)
+{
+	enable = _value
+}
+
+// Sets the button visibility
+function set_visible(_value)
+{	
+	// Set button visibility
+	visible = _value
+}

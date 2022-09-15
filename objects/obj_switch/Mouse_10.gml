@@ -1,5 +1,5 @@
 // Change switch active state
-if (!global.mid_transition and visible)
+if (!global.mid_transition and visible and enable)
 	switch(value)
 	{
 		case true:

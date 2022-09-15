@@ -1,16 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_player_icon",
-    "path": "sprites/spr_player_icon/spr_player_icon.yy",
+    "name": "spr_background_frame",
+    "path": "sprites/spr_background_frame/spr_background_frame.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
-    "name": "obj_save_this",
-    "path": "objects/obj_save_this/obj_save_this.yy",
+    "name": "obj_frame",
+    "path": "objects/obj_frame/obj_frame.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "LoseMenu",
+    "path": "folders/Screens/Game/LoseMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_frame_lose",
   "tags": [],
   "resourceType": "GMObject",
 }

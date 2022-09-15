@@ -26,6 +26,14 @@ action = {
 	_type: undefined
 }
 
+// Set button enable/disable function
+enable = true
+
+function set_enable(_value)
+{
+	enable = _value
+}
+
 // Sets the button visibility
 function set_visible(_value)
 {	
