@@ -1,14 +1,17 @@
 {
   "spriteId": {
-    "name": "spr_about_icon",
-    "path": "sprites/spr_about_icon/spr_about_icon.yy",
+    "name": "spr_text_area_border",
+    "path": "sprites/spr_text_area_border/spr_text_area_border.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_text_area",
+    "path": "objects/obj_text_area/obj_text_area.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,18 +26,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":60,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":61,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Credits",
+    "path": "folders/Screens/Credits.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_about_text",
+  "name": "obj_text_area_credits",
   "tags": [],
   "resourceType": "GMObject",
 }

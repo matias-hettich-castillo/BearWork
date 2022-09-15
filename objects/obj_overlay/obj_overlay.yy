@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "GUI",
+    "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_overlay",
