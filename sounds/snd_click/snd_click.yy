@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_click.wav",
-  "duration": 0.027211,
+  "duration": 0.054943,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Change switch idle state
 if (!global.mid_transition and visible and enable)
 	switch(value)

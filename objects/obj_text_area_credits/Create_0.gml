@@ -1,9 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
+// Set text area text align
 text_halign = fa_center
 
-text =  "\n\n\n\n\n\n\n\n\n"+
+// Set text area text
+text =  "\n\n\n\n\n\n\n\n"+
 		"BearWork - Version: " + string(GM_version) + "\n"+
 		
 		"\n"+
@@ -16,23 +18,35 @@ text =  "\n\n\n\n\n\n\n\n\n"+
 		
 		"\n\n"+
 		
-		"Original game by ...:\n"+
-		"https://en.wikipedia.org/wiki/...\n"+
+		"Original design by:\n"+
+		"Matias Hettich\n"+
 		
 		"\n\n"+
 		
-		"Sound effects made with:\n"+
-		"https://sfxr.me\n"+
+		"Sound effects made with\n"+
+		"\"jsfxr\": https://sfxr.me\n"+
 		
 		"\n\n"+
 		
-		"Color pallete by Luis Miguel Maldonado:\n"+
+		"Original music composed\n"+
+		"in Garage Band\n"+
+		
+		"\n\n"+
+		"\n\n"+
+		"\n\n"+
+		
+		"Transition script by Shaun Spalding\n"+
+		"tutorial video: \"GameMaker Studio 2\n"+
+		"Room Transitions using Sequences\"\n"+
+		"\n"+
+		"https://www.youtube.com/watch?\n"+
+		"v=TCwIerWM2iU&t=770s\n"+
+		
+		"\n\n"+
+		
+		"Color pallete from \"LOSPEC\"\n"+
+		"by Luis Miguel Maldonado:\n"+
 		"https://lospec.com/palette-list/slso8\n"+
-		
-		"\n\n"+
-		
-		"Original music composed by ...:\n"+
-		"...\n"+
 		
 		"\n\n"+
 		
@@ -46,4 +60,5 @@ text =  "\n\n\n\n\n\n\n\n\n"+
 		
 		"\n"
 
+// Build text area text
 text_area_build()

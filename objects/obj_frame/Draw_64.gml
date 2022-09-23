@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Draw label sprite
 draw_self()
 

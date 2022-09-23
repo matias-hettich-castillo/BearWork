@@ -1,3 +1,8 @@
+// Transition script by Shaun Spalding
+// GameMaker Studio 2 - Room Transitions using Sequences Tutorial video:
+// https://www.youtube.com/watch?v=TCwIerWM2iU&t=770s
+
+
 global.mid_transition = false
 global.room_target = -1
 

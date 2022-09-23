@@ -1,3 +1,4 @@
+///@description Do your game here
 // Draw icon sprite
 draw_self()
 

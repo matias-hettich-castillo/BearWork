@@ -1,3 +1,4 @@
+///@description Do your game here
 text_color = c_white
 
 // Game Responses

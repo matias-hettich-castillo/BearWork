@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Draw switch sprite
 draw_self()
 

@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Set switch value to on or off
 if (!global.mid_transition and visible and enable)
 {

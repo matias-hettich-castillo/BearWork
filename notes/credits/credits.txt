@@ -1,0 +1,18 @@
+BearWork
+A Game Maker Studio 2 Framework
+
+Created by:
+Matias Hettich
+
+Transition script by Shaun Spalding
+GameMaker Studio 2 - Room Transitions using Sequences Tutorial video:
+https://www.youtube.com/watch?v=TCwIerWM2iU&t=770s
+
+Sound effects made in:
+https://sfxr.me
+
+Color pallete by Luis Miguel Maldonado:
+https://lospec.com/palette-list/slso8
+
+Original music composed in Garage Band by:
+Matias Hettich

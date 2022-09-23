@@ -1,122 +1,244 @@
+// Script that contains the game buttons types and action.
+// Everytime there's a new button with a different functionality it must be defined here
+// for it to work properly.
+// If you have different buttons that do the same actions, just assign the same action and
+// define what happens down there.
+
+// Define the different button action types here first.
 enum button_actions {
+	// Transition actions
 	transition,
+	
+	// Main menu actions
 	new_game,
 	continue_game,
+	go_options,
+	
+	// Option menu actions
+	master_increase_volume,
+	master_decrease_volume,
+	music_increase_volume,
+	music_decrease_volume,
+	sfx_increase_volume,
+	sfx_decrease_volume,
+	back_options,
+	
+	// Music player actions
+	play_music,
+	pause_music,
+	stop_music,
+	
+	// In game actions
+	pause,
+	unpause,
+	next_level,
 	retry_game,
 	quit_game,
-	next_level,
-	unpause,
-	pause,
 	win,
 	lose
 }
 
-// Define different on_click actions to execute on objects
+// Function that performs an action when a button object is clicked.
+// The action._type determines what kind of action is performed.
+// Define different on_click actions to execute on button objects
 function on_click(action = undefined)
 {
 	// If action is defined
 	if (action != undefined)
 	{
-		// Action type is transition
-		if (action._type == button_actions.transition)
-		{	
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
+		#region Transition actions
+			// Action type is transition
+			if (action._type == button_actions.transition)
+			{	
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+		#endregion
 		
-		// Action type is new_game
-		if (action._type == button_actions.new_game)
-		{	
-			// Clear player score
-			obj_player.clear_score()
-			save_game()
+		#region Main menu actions
+			// Action type is new_game
+			if (action._type == button_actions.new_game)
+			{	
+				// Clear player score
+				obj_player.clear_score()
+				
+				// Save players game
+				save_game()
 			
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
-		
-		// Action type is continue_game
-		if (action._type == button_actions.continue_game)
-		{	
-			// Load game
-			load_game()
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
 			
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
-		
-		// Action type is retry_game
-		if (action._type == button_actions.retry_game)
-		{	
-			// Load game
-			load_game()
+			// Action type is continue_game
+			if (action._type == button_actions.continue_game)
+			{	
+				// Load players game
+				load_game()
 			
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
-		
-		// Action type is quit_game
-		if (action._type == button_actions.quit_game)
-		{	
-			// Save game
-			save_game()
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
 			
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
+			// Action type is go_options
+			if (action._type == button_actions.go_options)
+			{	
+				// Load game options
+				load_game(true)
+				
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+		#endregion
 		
-		// Action type is next_level
-		if (action._type == button_actions.next_level)
-		{	
-			// Save game
-			save_game()
+		#region Option menu actions
+			// Action type is master_increase_volume
+			if (action._type == button_actions.master_increase_volume)
+			{	
+				// Execute action
+				obj_music_player.master_volume_up()
+			}
+		
+			// Action type is master_decrease_volume
+			if (action._type == button_actions.master_decrease_volume)
+			{	
+				// Execute action
+				obj_music_player.master_volume_down()
+			}
 			
-			// Execute transition
-			transition_start(action._room_target, action._type_out, action._type_in)
-		}
-		
-		// Action type is pause
-		if (action._type == button_actions.pause)
-		{
-			// Execute pause
-			action._pause_menu.set_visible(true)
-			action._pause_button.set_visible(false)
-			action._win_button.set_enable(false)
-			action._lose_button.set_enable(false)
-			action._game.game_pause()
-		}
+			// Action type is music_increase_volume
+			if (action._type == button_actions.music_increase_volume)
+			{	
+				// Execute action
+				obj_music_player.music_volume_up()
+			}
 			
-		// Action type is unpause
-		if (action._type == button_actions.unpause)
-		{	
-			// Execute unpause
-			action._pause_menu.set_visible(false)
-			action._pause_button.set_visible(true)
-			action._win_button.set_enable(true)
-			action._lose_button.set_enable(true)
-			action._game.game_unpause()
-		}
+			// Action type is music_decrease_volume
+			if (action._type == button_actions.music_decrease_volume)
+			{	
+				// Execute action
+				obj_music_player.music_volume_down()
+			}
+			
+			// Action type is sfx_increase_volume
+			if (action._type == button_actions.sfx_increase_volume)
+			{
+				// Execute action
+				obj_music_player.sfx_volume_up()
+				obj_music_player.play_sfx(snd_explosion)
+			}
+			
+			// Action type is sfx_decrease_volume
+			if (action._type == button_actions.sfx_decrease_volume)
+			{	
+				// Execute action
+				obj_music_player.sfx_volume_down()
+				obj_music_player.play_sfx(snd_explosion)
+			}
+			
+			// Action type is back_options
+			if (action._type == button_actions.back_options)
+			{	
+				// Execute action
+				save_game(true)
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+		#endregion
 		
-		// Action type is win
-		if (action._type == button_actions.win)
-		{
-			// Execute pause
-			action._win_menu.set_visible(true)
-			action._pause_button.set_enable(false)
-			action._win_button.set_enable(false)
-			action._lose_button.set_enable(false)
-			action._game.game_win()
-		}
+		#region Music player actions
+			// Action type is play_music
+			if (action._type == button_actions.play_music)
+			{	
+				// Execute action
+				obj_music_player.resume_background_music()
+				obj_music_player.play_background_music()
+			}
+			
+			// Action type is pause_music
+			if (action._type == button_actions.pause_music)
+			{	
+				// Execute action
+				obj_music_player.pause_background_music()
+			}
 		
-		// Action type is lose
-		if (action._type == button_actions.lose)
-		{
-			// Execute pause
-			action._lose_menu.set_visible(true)
-			action._pause_button.set_enable(false)
-			action._win_button.set_enable(false)
-			action._lose_button.set_enable(false)
-			action._game.game_lose()
-		}
+			// Action type is stop_music
+			if (action._type == button_actions.stop_music)
+			{	
+				// Execute action
+				obj_music_player.stop_background_music()
+			}
+		#endregion
+		
+		#region In game actions
+			// Action type is pause
+			if (action._type == button_actions.pause)
+			{
+				// Execute pause
+				action._pause_menu.set_visible(true)
+				action._pause_button.set_visible(false)
+				action._win_button.set_enable(false)
+				action._lose_button.set_enable(false)
+				action._game.game_pause()
+			}
+			
+			// Action type is unpause
+			if (action._type == button_actions.unpause)
+			{	
+				// Execute unpause
+				action._pause_menu.set_visible(false)
+				action._pause_button.set_visible(true)
+				action._win_button.set_enable(true)
+				action._lose_button.set_enable(true)
+				action._game.game_unpause()
+			}
+			
+			// Action type is next_level
+			if (action._type == button_actions.next_level)
+			{	
+				// Save game
+				save_game()
+			
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+			
+			// Action type is retry_game
+			if (action._type == button_actions.retry_game)
+			{				
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+			
+			// Action type is quit_game
+			if (action._type == button_actions.quit_game)
+			{	
+				// Save game
+				save_game()
+			
+				// Execute action
+				transition_start(action._room_target, action._type_out, action._type_in)
+			}
+			
+			// Action type is win
+			if (action._type == button_actions.win)
+			{
+				// Execute pause
+				action._win_menu.set_visible(true)
+				action._pause_button.set_enable(false)
+				action._win_button.set_enable(false)
+				action._lose_button.set_enable(false)
+				action._game.game_win()
+			}
+		
+			// Action type is lose
+			if (action._type == button_actions.lose)
+			{
+				// Execute pause
+				action._lose_menu.set_visible(true)
+				action._pause_button.set_enable(false)
+				action._win_button.set_enable(false)
+				action._lose_button.set_enable(false)
+				action._game.game_lose()
+			}
+		#endregion
 	}
 }

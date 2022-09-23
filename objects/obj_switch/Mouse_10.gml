@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Change switch active state
 if (!global.mid_transition and visible and enable)
 	switch(value)

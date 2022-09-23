@@ -1,8 +1,9 @@
+///@description Do not touch this
 // Draw label sprite
 draw_self()
 
-draw_set_halign(fa_middle)
-draw_set_valign(fa_center)
+draw_set_halign(label_halign)
+draw_set_valign(label_valign)
 draw_set_font(DEFAULT_FONT)
 draw_set_color(text_color)
 

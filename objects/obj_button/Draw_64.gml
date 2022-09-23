@@ -1,3 +1,4 @@
+///@description Do not touch this
 // Draw button sprite
 draw_self()
 

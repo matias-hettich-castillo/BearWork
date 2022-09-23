@@ -1,3 +1,5 @@
+///@description Do not touch this
+
 // Change button state (hovering mouse fix)
 if (position_meeting(mouse_x, mouse_y, id) and enable)
 {
