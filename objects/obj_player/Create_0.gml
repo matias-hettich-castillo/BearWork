@@ -29,6 +29,5 @@ function add_score(_value)
 	player_score += _value
 }
 
-// Load game data
-load_game()
-load_game(true)
+// Load game data fix
+alarm_set(0, 1)

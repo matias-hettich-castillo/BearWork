@@ -6,9 +6,9 @@
 max_volume = 10			// Top limit for volume
 min_volume = 0			// Bottom limit for volume
 volume_step = 1			// Step for volume to go up or down
-master_volume = 1.0		// Master volume control
-music_volume = 0.8		// Background music volume control
-sfx_volume = 0.6		// Sound effects volume control
+master_volume = 8.0		// Master volume control
+music_volume = 3.0		// Background music volume control
+sfx_volume = 5.0		// Sound effects volume control
 
 // Here goes the themes that are going to be played as background music ingame
 #region Game Music

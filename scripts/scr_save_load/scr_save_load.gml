@@ -110,7 +110,7 @@ function load_game(_options = false)
 			if (_load_entity.obj == "obj_player" and !_options)
 			{
 				// Add here every variable that needs to be loaded
-				
+
 				// Load obj_player data
 				obj_player.set_score(_load_entity.player_score)
 			}
