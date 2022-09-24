@@ -3,9 +3,9 @@
 // Also here is the volume system, and different music options, data and values.
 
 // Master volume
-max_volume = 1			// Top limit for volume
+max_volume = 10			// Top limit for volume
 min_volume = 0			// Bottom limit for volume
-volume_step = 0.1		// Step for volume to go up or down
+volume_step = 1			// Step for volume to go up or down
 master_volume = 1.0		// Master volume control
 music_volume = 0.8		// Background music volume control
 sfx_volume = 0.6		// Sound effects volume control
@@ -17,7 +17,7 @@ sfx_volume = 0.6		// Sound effects volume control
 	
 	wordle_clone_main_theme = {
 		theme: mus_wordle_clone_main_theme,
-		name: "Wordle Clone Main Theme",
+		name: "Wordle Clone\nMain Theme\n\nby Matias Hettich",
 		priority: 100,
 		loop: true
 	}
@@ -36,8 +36,11 @@ sfx_volume = 0.6		// Sound effects volume control
 	// Function that plays the SFX in game
 	function play_sfx(_sound)
 	{
-		sfx = audio_play_sound(_sound, 50, false)
-		update_gain(sfx)
+		if (_sound != noone)
+		{
+			sfx = audio_play_sound(_sound, 50, false)
+			update_gain(sfx)
+		}
 	}
 
 	// Function that sets the BGM track to be played
@@ -129,7 +132,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		master_volume += volume_step
 		if (master_volume >= max_volume)
 			master_volume = max_volume
-		audio_master_gain(master_volume)
+		update_gain()
 	}
 	
 	// Function that decreases the master volume
@@ -138,7 +141,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		master_volume -= volume_step
 		if (master_volume <= min_volume)
 			master_volume = min_volume
-		audio_master_gain(master_volume)
+		update_gain()
 	}
 	
 	// Function that increases the background music volume
@@ -147,7 +150,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		music_volume += volume_step
 		if (music_volume >= max_volume)
 			music_volume = max_volume
-		audio_sound_gain(background_music, music_volume, 0)
+		update_gain()
 	}
 	
 	// Function that decreases the background music volume
@@ -156,7 +159,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		music_volume -= volume_step
 		if (music_volume <= min_volume)
 			music_volume = min_volume
-		audio_sound_gain(background_music, music_volume, 0)
+		update_gain()
 	}
 	
 	// Function that increases the sfx volume
@@ -181,6 +184,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		master_volume = _value
 		if (master_volume > max_volume) master_volume = max_volume
 		if (master_volume < min_volume) master_volume = min_volume
+		update_gain()
 	}
 	
 	// Function that gets the master volume value
@@ -195,6 +199,7 @@ sfx_volume = 0.6		// Sound effects volume control
 		music_volume = _value
 		if (music_volume > max_volume) music_volume = max_volume
 		if (music_volume < min_volume) music_volume = min_volume
+		update_gain()
 	}
 	
 	// Function that gets the music volume value
@@ -220,8 +225,11 @@ sfx_volume = 0.6		// Sound effects volume control
 	// Function that keeps the volume updated according to the corresponding control
 	function update_gain(sfx = noone)
 	{
-		if (sfx != noone) audio_sound_gain(sfx, sfx_volume, 0)
-		audio_sound_gain(background_music, music_volume, 0)
-		audio_master_gain(master_volume)
+		if (sfx != noone)
+		{
+			audio_sound_gain(sfx, sfx_volume/10, 0)
+		}
+		audio_sound_gain(background_music, music_volume/10, 0)
+		audio_master_gain(master_volume/10)
 	}
 #endregion

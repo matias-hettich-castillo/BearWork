@@ -11,3 +11,6 @@ if (!global.mid_transition and visible and enable)
 			state = switch_states.active_off
 			break
 	}
+	
+	// Execute switch sound
+	play_switch_sound(switch_sounds.active)

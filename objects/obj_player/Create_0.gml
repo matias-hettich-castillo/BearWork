@@ -2,6 +2,12 @@
 // Object that manages the different variables and functions that are related to the player.
 // Must be called on rm_start as the last object of that room.
 
+// Set the mouse icon for the game
+mouse_icon = {
+	idle: spr_mouse_idle,
+	click: spr_mouse_click
+}
+
 // Set player score
 player_score = 0
 

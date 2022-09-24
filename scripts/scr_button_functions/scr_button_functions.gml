@@ -1,8 +1,7 @@
-// Script that contains the game buttons types and action.
+// Script that contains the game button types and actions.
 // Everytime there's a new button with a different functionality it must be defined here
 // for it to work properly.
-// If you have different buttons that do the same actions, just assign the same action and
-// define what happens down there.
+// If you have different buttons that do the same action, just assign them the same action
 
 // Define the different button action types here first.
 enum button_actions {
@@ -62,6 +61,9 @@ function on_click(action = undefined)
 				// Clear player score
 				obj_player.clear_score()
 				
+				// Stop main menu music
+				obj_music_player.stop_background_music()
+				
 				// Save players game
 				save_game()
 			
@@ -71,7 +73,10 @@ function on_click(action = undefined)
 			
 			// Action type is continue_game
 			if (action._type == button_actions.continue_game)
-			{	
+			{
+				// Stop main menu music
+				obj_music_player.stop_background_music()
+				
 				// Load players game
 				load_game()
 			
@@ -173,6 +178,10 @@ function on_click(action = undefined)
 			if (action._type == button_actions.pause)
 			{
 				// Execute pause
+				with (obj_interactable)
+				{
+					set_enable(false)
+				}
 				action._pause_menu.set_visible(true)
 				action._pause_button.set_visible(false)
 				action._win_button.set_enable(false)
@@ -184,6 +193,10 @@ function on_click(action = undefined)
 			if (action._type == button_actions.unpause)
 			{	
 				// Execute unpause
+				with (obj_interactable)
+				{
+					set_enable(true)
+				}
 				action._pause_menu.set_visible(false)
 				action._pause_button.set_visible(true)
 				action._win_button.set_enable(true)
@@ -193,7 +206,7 @@ function on_click(action = undefined)
 			
 			// Action type is next_level
 			if (action._type == button_actions.next_level)
-			{	
+			{
 				// Save game
 				save_game()
 			
@@ -210,7 +223,10 @@ function on_click(action = undefined)
 			
 			// Action type is quit_game
 			if (action._type == button_actions.quit_game)
-			{	
+			{
+				// Start main menu music
+				obj_music_player.play_background_music()
+				
 				// Save game
 				save_game()
 			
@@ -222,6 +238,10 @@ function on_click(action = undefined)
 			if (action._type == button_actions.win)
 			{
 				// Execute pause
+				with (obj_interactable)
+				{
+					set_enable(false)
+				}
 				action._win_menu.set_visible(true)
 				action._pause_button.set_enable(false)
 				action._win_button.set_enable(false)
@@ -233,6 +253,10 @@ function on_click(action = undefined)
 			if (action._type == button_actions.lose)
 			{
 				// Execute pause
+				with (obj_interactable)
+				{
+					set_enable(false)
+				}
 				action._lose_menu.set_visible(true)
 				action._pause_button.set_enable(false)
 				action._win_button.set_enable(false)

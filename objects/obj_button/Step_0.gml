@@ -4,7 +4,9 @@
 if (position_meeting(mouse_x, mouse_y, id) and enable)
 {
 	if (mouse_check_button(mb_left))
+	{
 		state = button_states.click
+	}
 	else
 		state = button_states.active
 }

@@ -14,8 +14,8 @@
   "soundFile": "mus_wordle_clone_main_theme.mp3",
   "duration": 144.03918,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "mus_wordle_clone_main_theme",

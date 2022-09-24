@@ -41,6 +41,15 @@ function save_game(_options = false)
 		
 			array_push(_save_data, _save_entity)		// Push the data into the save array
 		}
+		
+		// Save game_debug_mode data
+		var _save_entity = 
+		{
+			obj : "global",									// Set global as id (used for loading)
+			game_debug_mode : global.game_debug_mode,		// Game debug mode value
+		}
+		
+		array_push(_save_data, _save_entity)		// Push the data into the save array
 	}
 	
 	// Create JSON string
@@ -64,7 +73,10 @@ function save_game(_options = false)
 	buffer_delete(_buffer)
 	
 	// Show a console message when ready
-	show_debug_message("Game Saved " + _string)
+	if (!_options)
+		show_debug_message("Game Saved " + _string)
+	else
+		show_debug_message("Options Saved " + _string)
 }
 
 // Handles all the data loading of the game
@@ -116,9 +128,21 @@ function load_game(_options = false)
 				// Update the game volume data
 				obj_music_player.update_gain()
 			}
+			
+			// In case of loading global data
+			if (_load_entity.obj == "global" and _options)
+			{
+				// Add here every variable that needs to be loaded
+				
+				// Load game_debug_mode data
+				global.game_debug_mode = _load_entity.game_debug_mode
+			}
 		}
 		
 		// Show a console message when ready
-		show_debug_message("Game Loaded " + _string)
+		if (!_options)
+			show_debug_message("Game Loaded " + _string)
+		else
+			show_debug_message("Options Loaded " + _string)
 	}
 }

@@ -8,6 +8,11 @@
 // Set switch value (Do not touch this)
 value = false
 
+function get_value()
+{
+	return value
+}
+
 // Set switch text
 text = "Switch"
 
@@ -20,6 +25,27 @@ switch_sprites = {
 	idle_off: spr_switch_idle_off,
 	active_on: spr_switch_active_on,
 	active_off: spr_switch_active_off
+}
+
+// Define switch sounds, change this in case you want different sound effects
+switch_sounds = {
+	pressed: snd_wordle_clone_type,
+	released: noone,
+	active: snd_blip_select
+}
+
+// Plays the corresponding switch sound in case it exists
+function play_switch_sound(_sound)
+{
+	if (_sound != noone)
+		obj_music_player.play_sfx(_sound)
+}
+
+// Set default switch command
+// Use this to give switches an action to perform when clicked
+// Later you have to add the action to scr_button_functions to use this
+action = {
+	_type: undefined
 }
 
 // Set button enable/disable function, used to make the switch interactable

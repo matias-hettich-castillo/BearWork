@@ -29,7 +29,7 @@ else
 }
 
 // Set switch sprite according state
-if (!global.mid_transition and visible)
+if (visible)
 	switch(state)
 	{
 		case switch_states.idle_on:
@@ -41,11 +41,13 @@ if (!global.mid_transition and visible)
 			break
 			
 		case switch_states.active_on:
-			sprite_index = switch_sprites.active_on
+			if (!global.mid_transition)
+				sprite_index = switch_sprites.active_on
 			break
 			
 		case switch_states.active_off:
-			sprite_index = switch_sprites.active_off
+			if (!global.mid_transition)
+				sprite_index = switch_sprites.active_off
 			break
 			
 		default:

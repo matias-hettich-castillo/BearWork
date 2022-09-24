@@ -25,6 +25,20 @@ button_sprites = {
 	click: spr_button_click
 }
 
+// Define button sounds, change this in case you want different sound effects
+button_sounds = {
+	pressed: snd_wordle_clone_type,
+	released: noone,
+	active: snd_blip_select
+}
+
+// Plays the corresponding button sound in case it exists
+function play_button_sound(_sound)
+{
+	if (_sound != noone)
+		obj_music_player.play_sfx(_sound)
+}
+
 // Set button enable/disable function, used to make the button interactable
 enable = true
 

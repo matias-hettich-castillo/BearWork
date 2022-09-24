@@ -4,7 +4,7 @@ text_valign = fa_top
 
 // Update text area text
 var _value = obj_music_player.get_master_volume()
-text =  string(floor(_value * 100)) + "%"
+text =  string(_value * 10) + "%"
 
 // Build text area text
 text_area_build()

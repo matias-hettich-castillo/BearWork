@@ -1,6 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
+// Set text area to be scrollable
+set_scrollable(true)
+
 // Set text area text align
 text_halign = fa_center
 
@@ -18,7 +21,7 @@ text =  "\n\n\n\n\n\n\n\n"+
 		
 		"\n\n"+
 		
-		"Original design by:\n"+
+		"Original design and music by:\n"+
 		"Matias Hettich\n"+
 		
 		"\n\n"+
@@ -28,25 +31,15 @@ text =  "\n\n\n\n\n\n\n\n"+
 		
 		"\n\n"+
 		
-		"Original music composed\n"+
-		"in Garage Band\n"+
-		
-		"\n\n"+
-		"\n\n"+
-		"\n\n"+
-		
-		"Transition script by Shaun Spalding\n"+
-		"tutorial video: \"GameMaker Studio 2\n"+
-		"Room Transitions using Sequences\"\n"+
-		"\n"+
-		"https://www.youtube.com/watch?\n"+
-		"v=TCwIerWM2iU&t=770s\n"+
-		
-		"\n\n"+
-		
 		"Color pallete from \"LOSPEC\"\n"+
 		"by Luis Miguel Maldonado:\n"+
 		"https://lospec.com/palette-list/slso8\n"+
+		
+		"\n\n"+
+		
+		"Transitions, save and load scripts\n"+
+		"based on Shaun Spalding tutorials:\n"+
+		"https://www.youtube.com/c/ShaunSpalding\n"+
 		
 		"\n\n"+
 		

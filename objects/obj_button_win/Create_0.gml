@@ -7,6 +7,9 @@ text = "Win!"
 // Set button text color
 text_color = c_white
 
+// Set special sound when the button is pressed
+button_sounds.pressed = snd_wordle_clone_correct
+
 // Set button action (Add action to scr_button_functions)
 action = {
 	_type : button_actions.win,

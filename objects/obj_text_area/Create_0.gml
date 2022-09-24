@@ -14,9 +14,22 @@ text_height = 0			// Used to determine height of text inside text area
 text_width = 0			// Used to determine width of text inside text area
 
 // Scroll variables
+scrollable = false
 scroll_step = 8			// Scroll step size
 scroll_top = 0			// Used to determine the top level of the scroll text
 scroll_bottom = 0		// Used to determine the bottom level of the scroll text
+
+// Updates the text area to be scrollable or not
+function set_scrollable(_value)
+{
+	scrollable = _value
+}
+
+// Text area sounds, make noone in case you want to disable sounds
+text_area_sounds = {
+	scroll_up: snd_scroll,
+	scroll_down: snd_scroll
+}
 
 // Text area border variables, use this to set different border themes
 border = {
