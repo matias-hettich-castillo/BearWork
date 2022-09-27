@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_scroll.wav",
-  "duration": 0.160522,
+  "duration": 0.033469,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -12,7 +12,8 @@ if (position_meeting(mouse_x, mouse_y, id) and enable)
 }
 
 else
-	state = button_states.idle
+	if (enable)
+		state = button_states.idle
 
 // Set button sprite according state
 if (!global.mid_transition and visible)
@@ -34,3 +35,7 @@ if (!global.mid_transition and visible)
 			sprite_index = button_sprites.idle
 			break
 	}
+	
+// Button disable fix
+if (state = button_states.disable)
+	sprite_index = button_sprites.disable

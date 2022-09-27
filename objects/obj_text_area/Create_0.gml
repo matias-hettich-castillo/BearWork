@@ -15,7 +15,7 @@ text_width = 0			// Used to determine width of text inside text area
 
 // Scroll variables
 scrollable = false
-scroll_step = 8			// Scroll step size
+scroll_step = 16			// Scroll step size
 scroll_top = 0			// Used to determine the top level of the scroll text
 scroll_bottom = 0		// Used to determine the bottom level of the scroll text
 

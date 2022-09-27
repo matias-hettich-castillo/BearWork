@@ -22,7 +22,8 @@ action = {
 button_sprites = {
 	idle: spr_button_idle,
 	active: spr_button_active,
-	click: spr_button_click
+	click: spr_button_click,
+	disable: spr_button_disable
 }
 
 // Define button sounds, change this in case you want different sound effects
@@ -45,6 +46,17 @@ enable = true
 function set_enable(_value)
 {
 	enable = _value
+	if (!enable)
+	{
+		state = button_states.disable
+		text_color = c_gray
+	}
+	
+	else
+	{
+		state = button_states.idle
+		text_color = c_white
+	}
 }
 
 // Sets the button visibility, used to show/hide the button
@@ -58,7 +70,8 @@ function set_visible(_value)
 enum button_states {
 	idle,
 	active,
-	click
+	click,
+	disable
 }
 
 // Set button default state (Do not touch this)

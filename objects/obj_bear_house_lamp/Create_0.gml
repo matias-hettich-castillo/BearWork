@@ -4,7 +4,7 @@ event_inherited();
 name = "Lamp"
 
 // Set item sound
-item_sounds.released = snd_wordle_clone_type
+item_sounds.released = snd_hit_hurt
 
 // Set TV action
 action = {

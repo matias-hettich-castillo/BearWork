@@ -5,7 +5,7 @@ event_inherited();
 name = "Plant"
 
 // Set item sound
-item_sounds.released = snd_hit_hurt
+item_sounds.released = snd_wordle_clone_type
 
 // Set TV action
 action = {

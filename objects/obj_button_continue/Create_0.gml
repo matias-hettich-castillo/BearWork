@@ -17,3 +17,11 @@ action = {
 	_type_out : sq_fadeout,
 	_type_in : sq_fadein
 }
+
+// Disable "Continue" button in case no game data exists
+if (!file_exists("savegame.save"))
+{
+	obj_button_continue.set_enable(false)
+	text_color = c_gray
+	show_debug_message("No savegame")
+}

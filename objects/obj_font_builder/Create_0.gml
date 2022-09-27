@@ -8,7 +8,7 @@
 	var font_sprite, map_string, proportional, separation, font_size_8
 
 	font_sprite = spr_font_bearwork_8
-	map_string = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789@¡!¿?\'\"#$%&()*-+.,/\\<>=[]|:; "
+	map_string = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789@¡!¿?\'\"#$%&()*-_+.,/\\<>=[]|:; "
 	proportional = true
 	separation = 1
 

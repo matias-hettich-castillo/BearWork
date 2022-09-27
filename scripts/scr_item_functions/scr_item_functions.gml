@@ -7,7 +7,8 @@
 enum item_actions {
 	// Interactions
 	win_point,
-	lose_point
+	lose_point,
+	tv_play_videogame
 }
 
 // Function that performs an action when a item object is clicked.
@@ -31,6 +32,35 @@ function item_on_click(action = undefined)
 			{	
 				// Execute action
 				obj_player.add_score(-1)
+			}
+			
+			// Action type is tv_play_videogame
+			if (action._type == item_actions.tv_play_videogame)
+			{	
+				// Execute action
+				
+				// Switch the TV animation
+				obj_bear_house_tv.animate = !obj_bear_house_tv.animate
+				
+				// Check if player turned the TV on or off
+				if (obj_bear_house_tv.animate)
+				{
+					// If the player turned the TV on, lose points
+					obj_player.add_score(-10)
+					
+					// Play the video game background music
+					obj_music_player.set_background_music(obj_music_player.wordle_clone_gameplay)
+					obj_music_player.play_background_music()
+				}
+				
+				else
+				{
+					// win points
+					obj_player.add_score(10)
+					
+					// Stop the game background music
+					obj_music_player.stop_background_music()
+				}
 			}
 		#endregion
 	}

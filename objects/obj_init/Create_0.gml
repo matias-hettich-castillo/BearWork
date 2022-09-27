@@ -15,4 +15,4 @@ audio_listener_orientation(0, 0, 1000, 0, -1 ,0)
 transition_start(rm_title, sq_intro, sq_fadein)
 
 // Set default game debug mode
-global.game_debug_mode = true
+global.game_debug_mode = false

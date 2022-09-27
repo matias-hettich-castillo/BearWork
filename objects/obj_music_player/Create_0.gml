@@ -6,20 +6,37 @@
 max_volume = 10			// Top limit for volume
 min_volume = 0			// Bottom limit for volume
 volume_step = 1			// Step for volume to go up or down
-master_volume = 8.0		// Master volume control
-music_volume = 3.0		// Background music volume control
-sfx_volume = 5.0		// Sound effects volume control
+master_volume = 10		// Master volume control
+music_volume = 10		// Background music volume control
+sfx_volume = 7			// Sound effects volume control
 
 // Here goes the themes that are going to be played as background music ingame
 #region Game Music
 	// To set a song as background music use set_background_music(_music)
 	// To play the background music use play_background_music()
 	
+	bear_work_main_theme = {
+		theme: mus_bear_work_main_theme,
+		name: "bear_work\nMain Theme\n\nby Matias Hettich",
+		priority: 100,
+		loop: true,
+		id: 0
+	}
+	
 	wordle_clone_main_theme = {
 		theme: mus_wordle_clone_main_theme,
 		name: "Wordle Clone\nMain Theme\n\nby Matias Hettich",
 		priority: 100,
-		loop: true
+		loop: true,
+		id: 1
+	}
+	
+	wordle_clone_gameplay = {
+		theme: mus_wordle_clone_gameplay,
+		name: "Wordle Clone\nGameplay Effect\n\nby Matias Hettich",
+		priority: 100,
+		loop: true,
+		id: 2
 	}
 #endregion
 
@@ -27,6 +44,7 @@ sfx_volume = 5.0		// Sound effects volume control
 #region BGM and SFX Player
 	// Game Background Music Player
 	background_music = noone		// Current BGM track to be played
+	background_music_id = -1		// Current BGM track id thats being played
 	background_music_theme = noone	// Theme to play from the BGM track
 	background_music_priority = 0	// Priority of the theme to play as BGM
 	background_music_loop = false	// Loop of the theme to play as BGM
@@ -50,6 +68,7 @@ sfx_volume = 5.0		// Sound effects volume control
 		background_music_priority = _music.priority
 		background_music_loop = _music.loop
 		background_music_name = _music.name
+		background_music_id = _music.id
 	}
 	
 	// Function that plays the current track as background music
@@ -109,6 +128,12 @@ sfx_volume = 5.0		// Sound effects volume control
 			// Set the BGM player status
 			background_music_status = "Resume"
 		}
+	}
+	
+	// Function that returns the BGM name of the track
+	function get_background_music_id()
+	{
+		return background_music_id
 	}
 	
 	// Function that returns the BGM name of the track

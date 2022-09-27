@@ -16,10 +16,12 @@ enum button_actions {
 	// Option menu actions
 	master_increase_volume,
 	master_decrease_volume,
+	music_next_song,
 	music_increase_volume,
 	music_decrease_volume,
 	sfx_increase_volume,
 	sfx_decrease_volume,
+	delete_save,
 	back_options,
 	
 	// Music player actions
@@ -110,6 +112,21 @@ function on_click(action = undefined)
 				obj_music_player.master_volume_down()
 			}
 			
+			// Action type is music_next_song
+			if (action._type == button_actions.music_next_song)
+			{
+				// Execute action
+				if (obj_music_player.get_background_music_id() != -1)
+				{
+					obj_music_player.stop_background_music()
+					if (obj_music_player.get_background_music_id() == 0)
+						obj_music_player.set_background_music(obj_music_player.wordle_clone_main_theme)
+					else
+						obj_music_player.set_background_music(obj_music_player.bear_work_main_theme)
+					obj_music_player.play_background_music()
+				}
+			}
+			
 			// Action type is music_increase_volume
 			if (action._type == button_actions.music_increase_volume)
 			{	
@@ -129,7 +146,7 @@ function on_click(action = undefined)
 			{
 				// Execute action
 				obj_music_player.sfx_volume_up()
-				obj_music_player.play_sfx(snd_explosion)
+				obj_music_player.play_sfx(snd_jump)
 			}
 			
 			// Action type is sfx_decrease_volume
@@ -137,7 +154,19 @@ function on_click(action = undefined)
 			{	
 				// Execute action
 				obj_music_player.sfx_volume_down()
-				obj_music_player.play_sfx(snd_explosion)
+				obj_music_player.play_sfx(snd_jump)
+			}
+			
+			// Action type is delete_save
+			if (action._type == button_actions.delete_save)
+			{	
+				// Execute action
+				if (file_exists("savegame.save"))
+				{
+					file_delete("savegame.save")
+					obj_button_delete_save.set_enable(false)
+					obj_music_player.play_sfx(snd_explosion)
+				}
 			}
 			
 			// Action type is back_options
@@ -184,8 +213,8 @@ function on_click(action = undefined)
 				}
 				action._pause_menu.set_visible(true)
 				action._pause_button.set_visible(false)
-				action._win_button.set_enable(false)
-				action._lose_button.set_enable(false)
+				action._win_button.set_visible(false)
+				action._lose_button.set_visible(false)
 				action._game.game_pause()
 			}
 			
@@ -199,8 +228,8 @@ function on_click(action = undefined)
 				}
 				action._pause_menu.set_visible(false)
 				action._pause_button.set_visible(true)
-				action._win_button.set_enable(true)
-				action._lose_button.set_enable(true)
+				action._win_button.set_visible(true)
+				action._lose_button.set_visible(true)
 				action._game.game_unpause()
 			}
 			
@@ -225,6 +254,8 @@ function on_click(action = undefined)
 			if (action._type == button_actions.quit_game)
 			{
 				// Start main menu music
+				obj_music_player.stop_background_music()
+				obj_music_player.set_background_music(obj_music_player.bear_work_main_theme)
 				obj_music_player.play_background_music()
 				
 				// Save game
@@ -237,30 +268,30 @@ function on_click(action = undefined)
 			// Action type is win
 			if (action._type == button_actions.win)
 			{
-				// Execute pause
+				// Execute win
 				with (obj_interactable)
 				{
 					set_enable(false)
 				}
 				action._win_menu.set_visible(true)
-				action._pause_button.set_enable(false)
-				action._win_button.set_enable(false)
-				action._lose_button.set_enable(false)
+				action._pause_button.set_visible(false)
+				action._win_button.set_visible(false)
+				action._lose_button.set_visible(false)
 				action._game.game_win()
 			}
 		
 			// Action type is lose
 			if (action._type == button_actions.lose)
 			{
-				// Execute pause
+				// Execute lose
 				with (obj_interactable)
 				{
 					set_enable(false)
 				}
 				action._lose_menu.set_visible(true)
-				action._pause_button.set_enable(false)
-				action._win_button.set_enable(false)
-				action._lose_button.set_enable(false)
+				action._pause_button.set_visible(false)
+				action._win_button.set_visible(false)
+				action._lose_button.set_visible(false)
 				action._game.game_lose()
 			}
 		#endregion
