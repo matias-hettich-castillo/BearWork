@@ -236,6 +236,9 @@ function on_click(action = undefined)
 			// Action type is next_level
 			if (action._type == button_actions.next_level)
 			{
+				// Stop bgm
+				obj_music_player.stop_background_music()
+				
 				// Save game
 				save_game()
 			
@@ -246,6 +249,9 @@ function on_click(action = undefined)
 			// Action type is retry_game
 			if (action._type == button_actions.retry_game)
 			{				
+				// Stop bgm
+				obj_music_player.stop_background_music()
+				
 				// Execute action
 				transition_start(action._room_target, action._type_out, action._type_in)
 			}
