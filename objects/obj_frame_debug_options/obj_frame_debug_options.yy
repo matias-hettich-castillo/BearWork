@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_frame",
-    "path": "objects/obj_frame/obj_frame.yy",
+    "name": "par_frame",
+    "path": "objects/par_frame/par_frame.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

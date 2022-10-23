@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_framework_logo",
   "spriteId": {
     "name": "spr_framework_logo",
     "path": "sprites/spr_framework_logo/spr_framework_logo.yy",
@@ -25,11 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "Start",
+    "path": "folders/Objects/Start.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_framework_logo",
-  "tags": [],
-  "resourceType": "GMObject",
 }

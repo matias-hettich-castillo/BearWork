@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_interactable",
-    "path": "objects/obj_interactable/obj_interactable.yy",
+    "name": "par_interactable",
+    "path": "objects/par_interactable/par_interactable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

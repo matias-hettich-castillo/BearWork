@@ -23,7 +23,7 @@ if (!global.mid_transition and visible and enable)
 		else if (mouse_check_button_released(mb_left))
 		{
 			// Deselect all, set this interactable selected
-			with (obj_interactable) state = interactable_states.idle
+			with (par_interactable) state = interactable_states.idle
 			state = interactable_states.selected
 	
 			// Execute button sound

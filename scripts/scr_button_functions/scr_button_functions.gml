@@ -207,7 +207,7 @@ function on_click(action = undefined)
 			if (action._type == button_actions.pause)
 			{
 				// Execute pause
-				with (obj_interactable)
+				with (par_interactable)
 				{
 					set_enable(false)
 				}
@@ -222,7 +222,7 @@ function on_click(action = undefined)
 			if (action._type == button_actions.unpause)
 			{	
 				// Execute unpause
-				with (obj_interactable)
+				with (par_interactable)
 				{
 					set_enable(true)
 				}
@@ -275,7 +275,7 @@ function on_click(action = undefined)
 			if (action._type == button_actions.win)
 			{
 				// Execute win
-				with (obj_interactable)
+				with (par_interactable)
 				{
 					set_enable(false)
 				}
@@ -290,7 +290,7 @@ function on_click(action = undefined)
 			if (action._type == button_actions.lose)
 			{
 				// Execute lose
-				with (obj_interactable)
+				with (par_interactable)
 				{
 					set_enable(false)
 				}

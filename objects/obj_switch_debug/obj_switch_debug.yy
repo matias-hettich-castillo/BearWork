@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_switch",
-    "path": "objects/obj_switch/obj_switch.yy",
+    "name": "par_switch",
+    "path": "objects/par_switch/par_switch.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

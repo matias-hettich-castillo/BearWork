@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_label",
-    "path": "objects/obj_label/obj_label.yy",
+    "name": "par_label",
+    "path": "objects/par_label/par_label.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

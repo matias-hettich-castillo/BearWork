@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_text_area",
-    "path": "objects/obj_text_area/obj_text_area.yy",
+    "name": "par_text_area",
+    "path": "objects/par_text_area/par_text_area.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
