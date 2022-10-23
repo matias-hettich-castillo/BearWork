@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_text_area_music_name",
   "spriteId": {
     "name": "spr_text_area_border",
     "path": "sprites/spr_text_area_border/spr_text_area_border.yy",
@@ -25,17 +28,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "MusicOptions",
-    "path": "folders/Screens/Options/MusicOptions.yy",
+    "path": "folders/Rooms/Options/MusicOptions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_text_area_music_name",
-  "tags": [],
-  "resourceType": "GMObject",
 }

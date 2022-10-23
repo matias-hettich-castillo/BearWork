@@ -5,7 +5,7 @@ event_inherited();
 set_scrollable(true)
 
 // Set text area text align
-text_halign = fa_center
+set_center_align()
 
 // Set text area text
 text =  "\n\n\n\n\n\n\n\n"+
@@ -49,9 +49,4 @@ text =  "\n\n\n\n\n\n\n\n"+
 		"\n"+
 		
 		"<3"+
-		"\n\n\n\n\n\n\n\n\n"+
-		
-		"\n"
-
-// Build text area text
-text_area_build()
+		"\n\n\n\n\n\n\n"

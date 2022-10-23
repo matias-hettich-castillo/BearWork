@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_text_area_credits",
   "spriteId": {
     "name": "spr_text_area_border",
     "path": "sprites/spr_text_area_border/spr_text_area_border.yy",
@@ -25,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Credits",
-    "path": "folders/Screens/Credits.yy",
+    "path": "folders/Rooms/Credits.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_text_area_credits",
-  "tags": [],
-  "resourceType": "GMObject",
 }

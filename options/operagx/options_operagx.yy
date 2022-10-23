@@ -1,6 +1,9 @@
 {
-  "option_operagx_version": "1.0.2.2",
-  "option_operagx_next_version": "1.0.2.3",
+  "resourceType": "GMOperaGXOptions",
+  "resourceVersion": "1.0",
+  "name": "operagx",
+  "option_operagx_version": "1.0.2.3",
+  "option_operagx_next_version": "1.1.2.4",
   "option_operagx_game_name": "Bear Work",
   "option_operagx_interpolate_pixels": false,
   "option_operagx_scale": 0,
@@ -11,9 +14,5 @@
   "option_operagx_team_id": "15ef6160-4a57-460a-8be5-ef1d3c851e89",
   "option_operagx_editUrl": "https://create.gx.games/game/8c491972-3be4-4767-94e1-1e9027843b22/edit",
   "option_operagx_internalShareUrl": "https://gx.games/games/qfulir/bear-work/tracks/3c565b70-4e81-4f79-8bee-ac07166002db/",
-  "option_operagx_publicShareUrl": "",
-  "resourceVersion": "1.0",
-  "name": "operagx",
-  "tags": [],
-  "resourceType": "GMOperaGXOptions",
+  "option_operagx_publicShareUrl": "https://gx.games/games/qfulir/bear-work/",
 }

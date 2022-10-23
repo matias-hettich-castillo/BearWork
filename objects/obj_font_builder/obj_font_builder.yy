@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_font_builder",
   "spriteId": {
     "name": "spr_font_builder_icon",
     "path": "sprites/spr_font_builder_icon/spr_font_builder_icon.yy",
@@ -22,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +33,4 @@
     "name": "Controllers",
     "path": "folders/Objects/Controllers.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_font_builder",
-  "tags": [],
-  "resourceType": "GMObject",
 }

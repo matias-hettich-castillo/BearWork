@@ -2,6 +2,16 @@
 // Object that manages the game fonts. Used in the beggining of the game to set up
 // the different fonts that are going to be used ingame.
 
+// Define text alignment here
+#region Text alignment
+	enum TEXTALIGNS
+	{
+		LEFT,
+		RIGHT,
+		CENTER
+	}
+#endregion
+
 // Define the fonts here
 #region Font size 8
 	// Set up font_size_8 font

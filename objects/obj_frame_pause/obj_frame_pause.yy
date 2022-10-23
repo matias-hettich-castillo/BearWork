@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_frame_pause",
   "spriteId": {
     "name": "spr_background_frame",
     "path": "sprites/spr_background_frame/spr_background_frame.yy",
@@ -25,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "PauseMenu",
-    "path": "folders/Screens/Game/PauseMenu.yy",
+    "path": "folders/Rooms/Game/PauseMenu.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_frame_pause",
-  "tags": [],
-  "resourceType": "GMObject",
 }

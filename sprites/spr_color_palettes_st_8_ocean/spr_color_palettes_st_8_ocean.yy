@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_color_palettes_st_8_ocean",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 464,
   "height": 120,
   "textureGroupId": {
@@ -103,15 +107,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"228e6eed-2b46-4143-b216-5dc4f6aeb857","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"228e6eed-2b46-4143-b216-5dc4f6aeb857","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"LayerId":{"name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_color_palettes_st_8_ocean","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","name":"228e6eed-2b46-4143-b216-5dc4f6aeb857","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1c45d06b-d0ba-40e6-9517-907f87913fc4","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c45d06b-d0ba-40e6-9517-907f87913fc4","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"LayerId":{"name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_color_palettes_st_8_ocean","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","name":"1c45d06b-d0ba-40e6-9517-907f87913fc4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"228e6eed-2b46-4143-b216-5dc4f6aeb857",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c45d06b-d0ba-40e6-9517-907f87913fc4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_color_palettes_st_8_ocean","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_color_palettes_st_8_ocean",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -119,13 +121,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9424b24a-c3bd-4cbc-a5cf-7c98a6402ef7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"228e6eed-2b46-4143-b216-5dc4f6aeb857","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9facc790-bd1f-4da6-845d-888bd6d87abc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c45d06b-d0ba-40e6-9517-907f87913fc4","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"9424b24a-c3bd-4cbc-a5cf-7c98a6402ef7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"228e6eed-2b46-4143-b216-5dc4f6aeb857","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9facc790-bd1f-4da6-845d-888bd6d87abc","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c45d06b-d0ba-40e6-9517-907f87913fc4","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -141,22 +143,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_color_palettes_st_8_ocean","path":"sprites/spr_color_palettes_st_8_ocean/spr_color_palettes_st_8_ocean.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_color_palettes_st_8_ocean",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ColorPalettes",
     "path": "folders/Sprites/ColorPalettes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_color_palettes_st_8_ocean",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

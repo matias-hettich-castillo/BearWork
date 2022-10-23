@@ -1,12 +1,8 @@
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
-// Set text horizontal/vertical align
-text_halign = fa_center
-text_valign = fa_middle
+// Set text align
+set_center_align()
 
-// Set text area text
-text =  ""
-
-// Build text area text
-text_area_build()
+// Set text space to the border
+set_text_border_space(6)

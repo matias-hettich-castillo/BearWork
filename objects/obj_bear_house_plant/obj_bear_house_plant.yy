@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bear_house_plant",
   "spriteId": {
     "name": "spr_bear_house_plant",
     "path": "sprites/spr_bear_house_plant/spr_bear_house_plant.yy",
@@ -25,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Game",
-    "path": "folders/Screens/Game.yy",
+    "path": "folders/Rooms/Game.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bear_house_plant",
-  "tags": [],
-  "resourceType": "GMObject",
 }

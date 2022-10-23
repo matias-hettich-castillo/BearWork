@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bear_house",
   "spriteId": {
     "name": "spr_bear_house",
     "path": "sprites/spr_bear_house/spr_bear_house.yy",
@@ -26,10 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Game",
-    "path": "folders/Screens/Game.yy",
+    "path": "folders/Rooms/Game.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bear_house",
-  "tags": [],
-  "resourceType": "GMObject",
 }

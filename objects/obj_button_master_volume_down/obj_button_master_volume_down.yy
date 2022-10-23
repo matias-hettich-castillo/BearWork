@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_button_master_volume_down",
   "spriteId": {
     "name": "spr_button_idle",
     "path": "sprites/spr_button_idle/spr_button_idle.yy",
@@ -25,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "MasterOptions",
-    "path": "folders/Screens/Options/MasterOptions.yy",
+    "path": "folders/Rooms/Options/MasterOptions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_button_master_volume_down",
-  "tags": [],
-  "resourceType": "GMObject",
 }

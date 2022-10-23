@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_color_palettes_ty_shades_of_nokia_12",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 464,
   "height": 120,
   "textureGroupId": {
@@ -103,15 +107,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"LayerId":{"name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_color_palettes_ty_shades_of_nokia_12","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1c03aafa-7389-499d-82f9-fefe388998db","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c03aafa-7389-499d-82f9-fefe388998db","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"LayerId":{"name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_color_palettes_ty_shades_of_nokia_12","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","name":"1c03aafa-7389-499d-82f9-fefe388998db","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c03aafa-7389-499d-82f9-fefe388998db",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_color_palettes_ty_shades_of_nokia_12","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_color_palettes_ty_shades_of_nokia_12",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -119,13 +121,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9371a9bf-2b42-4d6c-ad75-6d8a304aa674","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"80de7ea8-a8f1-4edb-96f9-c9eaf716130b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c03aafa-7389-499d-82f9-fefe388998db","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"9371a9bf-2b42-4d6c-ad75-6d8a304aa674","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a268bbf7-f6b0-48d5-ae43-92fc6211f784","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"80de7ea8-a8f1-4edb-96f9-c9eaf716130b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c03aafa-7389-499d-82f9-fefe388998db","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -141,22 +143,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_color_palettes_ty_shades_of_nokia_12","path":"sprites/spr_color_palettes_ty_shades_of_nokia_12/spr_color_palettes_ty_shades_of_nokia_12.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_color_palettes_ty_shades_of_nokia_12",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d7cb97d4-e78e-4bf8-a9cc-d102cda92b97","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ColorPalettes",
     "path": "folders/Sprites/ColorPalettes.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_color_palettes_ty_shades_of_nokia_12",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
