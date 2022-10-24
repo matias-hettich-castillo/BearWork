@@ -15,7 +15,7 @@ draw_sprite_ext(border.background, border.back_subimage, border.x, border.y, ima
 	// draw things here, subtracting (clip_x, clip_y) from coordinates:
 
 	// Draw formatted_text
-	draw_set_font(DEFAULT_FONT)
+	draw_set_font(text_font)
 	switch (text_align)
 	{
 		case TEXTALIGNS.LEFT:

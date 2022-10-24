@@ -8,7 +8,7 @@ if (state != interactable_states.idle)
 	// Set draw text values
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
-	draw_set_font(DEFAULT_FONT)
+	draw_set_font(NORMAL_FONT)
 	draw_set_color(name_color)
 
 	// Draw item name

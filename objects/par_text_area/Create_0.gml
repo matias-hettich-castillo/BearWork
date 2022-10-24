@@ -56,6 +56,12 @@
 		text_align = TEXTALIGNS.RIGHT
 		text_x = sprite_width - border_space
 	}
+	
+	// Set the text area font
+	function set_font(_value)
+	{
+		text_font = _value
+	}
 
 	// Updates the text area to be scrollable or not
 	function set_scrollable(_value)
@@ -110,7 +116,7 @@
 				else
 				{
 					// Calculate next word width in pixels
-					draw_set_font(DEFAULT_FONT)
+					draw_set_font(text_font)
 					_new_line_width = string_width(_line + " " + _words[i])
 				}
 			}
@@ -139,6 +145,7 @@
 	text = ""						// The raw text to show in the text area
 	border_space = 8				// Space between the text and the text area border
 	text_color = c_white			// Text area text color
+	text_font = NORMAL_FONT			// Text area font
 	text_align = TEXTALIGNS.LEFT	// The text alignment inside the text area
 	formatted_text = ""									// The formatted text to be renderized
 	text_x = border_space								// X position inside the surface clip
