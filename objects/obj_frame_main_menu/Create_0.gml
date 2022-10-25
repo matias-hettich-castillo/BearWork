@@ -2,10 +2,7 @@
 event_inherited();
 
 // Set the frame title
-text = "Main menu"
-
-// Set the frame title color
-text_color = c_white
+title = "Main menu"
 
 // Add frame elements
 add_element(obj_button_new_game)

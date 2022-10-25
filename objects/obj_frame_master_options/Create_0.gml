@@ -2,10 +2,7 @@
 event_inherited();
 
 // Set frame title
-text = "Master Options"
-
-// Set the frame title color
-text_color = c_white
+title = "Master Options"
 
 // Add frame elements
 add_element(obj_button_master_volume_up)

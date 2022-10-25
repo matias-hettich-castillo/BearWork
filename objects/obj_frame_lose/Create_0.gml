@@ -2,10 +2,7 @@
 event_inherited();
 
 // Set frame title
-text = "You Lose!"
-
-// Set frame title color
-text_color = c_white
+title = "You Lose!"
 
 // Add frame elements
 add_element(obj_button_retry_lose)

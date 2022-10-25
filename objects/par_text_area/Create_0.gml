@@ -40,21 +40,45 @@
 	function set_left_align()
 	{
 		text_align = TEXTALIGNS.LEFT
-		text_x = border_space
 	}
 	
 	// Set the text area to center align
 	function set_center_align()
 	{
 		text_align = TEXTALIGNS.CENTER
-		text_x = sprite_width / 2
 	}
 	
 	// Set the text area to right align
 	function set_right_align()
 	{
 		text_align = TEXTALIGNS.RIGHT
+	}
+	
+	// Functions that updates the text to left alignment
+	function align_left()
+	{
+		draw_set_halign(fa_left)
+		draw_set_valign(fa_top)
+		text_x = border_space
+		text_y = border_space + scroll
+	}
+	
+	// Functions that updates the text to center alignment
+	function align_center()
+	{
+		draw_set_halign(fa_middle)
+		draw_set_valign(fa_top)
+		text_x = sprite_width / 2
+		text_y = border_space + scroll
+	}
+	
+	// Functions that updates the text to right alignment
+	function align_right()
+	{
+		draw_set_halign(fa_right)
+		draw_set_valign(fa_top)
 		text_x = sprite_width - border_space
+		text_y = border_space + scroll
 	}
 	
 	// Set the text area font
@@ -75,21 +99,27 @@
 	// Must be called every step to update the text area values.
 	function update()
 	{
-		// Update the text area width inside the surface clip
+		// Set font and color of text
+		draw_set_font(text_font)
+		draw_set_color(text_color)
+		
+		// Update the text area alignment
 		switch (text_align)
 		{
 			case TEXTALIGNS.LEFT:
-				text_x = border_space
+				align_left()
 				break
 			case TEXTALIGNS.CENTER:
-				text_x = sprite_width / 2
+				align_center()
 				break
 			case TEXTALIGNS.RIGHT:
-				text_x = sprite_width - border_space
+				align_right()
+				break
 		}
-		text_y = border_space + scroll
+		
+		// Update the text area width
 		text_area_width = sprite_width - border_space * 3
-	
+
 		// Split the text into a words array
 		var _words = string_split(text, " ")
 		formatted_text = ""
@@ -183,7 +213,7 @@
 		alpha: 0,
 		x: 0,
 		y: 0,
-		width: 0,
-		height: 0
+		width: 5,
+		height: 5
 	}
 #endregion

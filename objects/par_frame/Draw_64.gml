@@ -2,9 +2,6 @@
 // Draw label sprite
 draw_self()
 
-draw_set_halign(fa_middle)
-draw_set_valign(fa_top)
-draw_set_font(NORMAL_FONT)
-draw_set_color(text_color)
+update()
 
-draw_text(x + sprite_width/2, y+5, text)
+draw_text(title_x, title_y, title)
