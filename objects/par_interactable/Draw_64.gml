@@ -1,5 +1,6 @@
 /// @description Do not touch this
-// Draw item name everytime but when item is idle
+
+// Draw item name and selector everytime except when item is idle
 if (state != interactable_states.idle)
 {
 	// Draw selector
@@ -18,9 +19,19 @@ if (state != interactable_states.idle)
 #region Debug interaction
 	if (global.game_debug_mode)
 	{
+		if (state == interactable_states.idle)
+		{
+			draw_text(x-name_x_offset, y+name_y_offset, idle_text)
+		}
+		
 		if (state == interactable_states.active)
 		{
 			draw_text(x-name_x_offset, y+name_y_offset, active_text)
+		}
+		
+		if (state == interactable_states.held)
+		{
+			draw_text(x-name_x_offset, y+name_y_offset, held_text)
 		}
 
 		if (state == interactable_states.click)

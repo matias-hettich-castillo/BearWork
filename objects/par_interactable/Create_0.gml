@@ -22,12 +22,15 @@ selector_sprite = spr_interactable
 item_sprites = {
 	idle: sprite_index,
 	active: sprite_index,
+	held: sprite_index,
 	click: sprite_index,
 	selected: sprite_index
 }
 
 // Set item interaction texts
-active_text = "Action"
+idle_text = "Idle"
+active_text = "Active"
+held_text = "Held"
 click_text = "Click"
 selected_text = "Selected"
 
@@ -37,6 +40,9 @@ selected_text = "Selected"
 action = {
 	_type: undefined
 }
+
+// Used to define the step where the action must be performed
+do_action = false
 
 // Define item sounds, change this in case you want different sound effects
 item_sounds = {
@@ -75,6 +81,7 @@ enum interactable_states {
 	idle,
 	active,
 	click,
+	held,
 	selected
 }
 

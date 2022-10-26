@@ -1,3 +1,5 @@
+event_inherited()
+
 // Animate the TV
 if (animate)
 	draw_self()
