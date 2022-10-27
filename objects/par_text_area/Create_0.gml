@@ -96,7 +96,7 @@
 
 #region Variables, Functions and Structs (Do not touch)
 	// Function that updates the text values (width, position, surface clip, etc)
-	// Must be called every step to update the text area values.
+	// Must be called every draw event to update the text area values.
 	function update()
 	{
 		// Set font and color of text
