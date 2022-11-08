@@ -8,3 +8,6 @@ title = "Main menu"
 add_element(obj_button_new_game)
 add_element(obj_button_continue)
 add_element(obj_button_options)
+
+// Center the frame position
+set_frame_position(0, 42)

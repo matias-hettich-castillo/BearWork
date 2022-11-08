@@ -14,3 +14,5 @@ item_sounds.released = snd_hit_hurt
 action = {
 	_type: item_actions.tv_play_videogame
 }
+
+set_visible(true)

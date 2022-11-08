@@ -110,3 +110,39 @@ function set_visible(_value)
 		elements[i].visible = _value
 	}
 }
+
+// This function centers the frame in the camera view.
+// The final position can be tweaked adding or substracting to the center position
+// with the dx and dy values.
+// If the frame has elements it also repositions them to the new position.
+// It must be called at the end of the create event of the children frames,
+// if not, the frame will render in the position that was defined in the room editor.
+// In case this is what is needed, just leave it without the call to this function
+function set_frame_position(dx = 0, dy = 0)
+{
+	// Get the elements relative position to the frame
+	var num_elements = array_length(elements)
+	var element_relative_x = array_create(0)
+	var element_relative_y = array_create(0)
+	
+	for (var i = 0; i < num_elements; i++)
+	{
+		array_push(element_relative_x, elements[i].x - x)
+		array_push(element_relative_y, elements[i].y - y)
+	}
+	
+	// Position the frame according to the gui width and height
+	x = camera_get_view_x(view_camera[0]) +
+		(camera_get_view_width(view_camera[0]) / 2) -
+		(sprite_width / 2) + dx
+	y = camera_get_view_y(view_camera[0]) +
+		(camera_get_view_height(view_camera[0]) / 2) -
+		(sprite_height / 2) + dy
+	
+	// Reposition the elements
+	for (var i = 0; i < num_elements; i++)
+	{
+		elements[i].x = x + element_relative_x[i]
+		elements[i].y = y + element_relative_y[i]
+	}
+}

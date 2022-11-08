@@ -1,4 +1,8 @@
 ///@description Do not touch this
+
+// Switch disable if layer is not visible
+if (!layer_get_visible(layer)) {visible = false}
+
 // Change button state (hovering mouse fix)
 if (position_meeting(mouse_x, mouse_y, id) and enable)
 {
